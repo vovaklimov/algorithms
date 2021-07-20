@@ -11,9 +11,8 @@ fun binarySearch(
     sortedArray: Array<Int>,
     value: Int,
 ): Int? {
-    val size = sortedArray.size
     var left = 0
-    var right = size - 1
+    var right = sortedArray.size - 1
 
     while (left <= right) {
         val mid = (left + right) / 2

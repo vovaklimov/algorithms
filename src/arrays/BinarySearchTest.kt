@@ -8,11 +8,11 @@ class BinarySearchTest {
 
     @Test
     fun findsElementInSortedArray() {
-        assertEquals(binarySearch(arrayOf(1, 2, 3, 4, 5), 3), 2)
+        assertEquals(2, binarySearch(arrayOf(1, 2, 3, 4, 5), 3))
 
-        assertEquals(binarySearch(arrayOf(1, 3, 4, 5, 6, 3), 6), 4)
+        assertEquals(4, binarySearch(arrayOf(1, 3, 4, 5, 6, 3), 6))
 
-        assertEquals(binarySearch(arrayOf(1), 1), 0)
+        assertEquals(0, binarySearch(arrayOf(1), 1))
     }
 
     @Test
@@ -25,14 +25,14 @@ class BinarySearchTest {
     fun findsElementsOnArrayBoundaries() {
         val arr = arrayOf(1, 2, 3, 4)
 
-        assertEquals(binarySearch(arr, 1), 0)
-        assertEquals(binarySearch(arr, 4), 3)
+        assertEquals(0, binarySearch(arr, 1))
+        assertEquals(3, binarySearch(arr, 4))
     }
 
     @Test
     fun findsElementInArrayMid() {
-        assertEquals(binarySearch(arrayOf(1, 2, 3), 2), 1)
+        assertEquals(1, binarySearch(arrayOf(1, 2, 3), 2))
 
-        assertEquals(binarySearch(arrayOf(1, 2, 3, 4), 3), 2)
+        assertEquals(2, binarySearch(arrayOf(1, 2, 3, 4), 3))
     }
 }
