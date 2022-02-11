@@ -1,6 +1,5 @@
-package other
-
 import org.junit.Test
+import other.getFibonacciNumber
 import kotlin.test.assertEquals
 
 class FibonacciTest {

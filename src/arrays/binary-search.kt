@@ -21,7 +21,7 @@ fun binarySearch(
         when {
             guess == value -> return mid
             guess > value -> right = mid - 1
-            guess < value -> left = mid + 1
+            else -> left = mid + 1
         }
     }
 
